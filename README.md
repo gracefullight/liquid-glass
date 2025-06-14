@@ -4,5 +4,4 @@
 
 - `apps/` — Demo and Storybook apps
 - `packages/ui` — The design system library
-- `packages/config` — Shared config (tsconfig, tailwind, etc)
-- `packages/types` — Shared types
+
