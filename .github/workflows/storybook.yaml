@@ -39,8 +39,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build Storybook
-        run: pnpm turbo build --filter=@gracefullight/liquid-glass-storybook
+      - name: Build all packages and Storybook
+        run: pnpm turbo build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
