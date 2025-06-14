@@ -1,11 +1,13 @@
 import type { ButtonHTMLAttributes, FC, ReactNode } from "react";
 
 import {
+  LiquidGlassFilters,
+  useLiquidGlass,
+} from "@gracefullight/liquid-glass";
+import {
   type LiquidGlassButtonSize,
   liquidGlassButton,
 } from "./liquid-glass-button.styles";
-import { LiquidGlassFilters } from "./liquid-glass-filters";
-import { useLiquidGlass } from "./liquid-glass-provider";
 
 export interface LiquidGlassButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement> {

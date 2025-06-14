@@ -2,19 +2,18 @@ import { defineConfig } from "tsup";
 
 export default defineConfig({
   entry: ["src/index.tsx"],
+  format: ["cjs", "esm"],
   dts: true,
-  format: ["esm", "cjs"],
   splitting: false,
-  outDir: "dist",
+  sourcemap: true,
+  clean: true,
   external: ["react", "react-dom"],
   esbuildOptions(options) {
     options.jsx = "automatic";
     options.jsxImportSource = "react";
   },
+  noExternal: [],
   banner: {
     js: '"use client";',
-  },
-  loader: {
-    ".css": "file",
   },
 });

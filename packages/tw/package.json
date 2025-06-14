@@ -1,6 +1,7 @@
 {
   "name": "@gracefullight/liquid-glass-tailwind",
   "version": "0.1.0",
+  "private": true,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -20,7 +21,6 @@
     "dev:css": "tailwindcss -i src/global.css -o dist/global.css --watch"
   },
   "dependencies": {
-    "react": "^19.1.0",
     "tailwind-variants": "^1.0.0"
   },
   "devDependencies": {
@@ -34,5 +34,9 @@
     "tailwindcss": "^4.1.10",
     "tsup": "^8.5.0",
     "typescript": "^5"
+  },
+  "peerDependencies": {
+    "@gracefullight/liquid-glass": "workspace:*",
+    "react": ">=19.0.0"
   }
 }

@@ -1,10 +1,12 @@
+import {
+  LiquidGlassFilters,
+  useLiquidGlass,
+} from "@gracefullight/liquid-glass";
 import type React from "react";
 import {
   type LiquidGlassCardSize,
   liquidGlassCard,
 } from "./liquid-glass-card.styles";
-import { LiquidGlassFilters } from "./liquid-glass-filters";
-import { useLiquidGlass } from "./liquid-glass-provider";
 
 export interface LiquidGlassCardProps
   extends React.HTMLAttributes<HTMLDivElement> {
