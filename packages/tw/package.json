@@ -21,6 +21,7 @@
     "dev:css": "tailwindcss -i src/global.css -o dist/global.css --watch"
   },
   "dependencies": {
+    "@gracefullight/liquid-glass": "workspace:*",
     "tailwind-variants": "^1.0.0"
   },
   "devDependencies": {
