@@ -4,4 +4,3 @@
 
 - `apps/` — Demo and Storybook apps
 - `packages/ui` — The design system library
-
