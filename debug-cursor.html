@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Debug</title>
+    <style>
+        .cursor-pointer {
+            cursor: pointer !important;
+        }
+        .test-cursor {
+            cursor: pointer;
+            background: red;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-cursor">This should have pointer cursor</div>
+    <div class="cursor-pointer" style="background: blue; color: white; padding: 10px; margin: 10px; display: inline-block;">
+        This should also have pointer cursor
+    </div>
+</body>
+</html>

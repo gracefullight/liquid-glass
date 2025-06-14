@@ -1,0 +1,38 @@
+{
+  "name": "@gracefullight/liquid-glass-tailwind",
+  "version": "0.1.0",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./global.css": "./dist/global.css"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "pnpm run build:css && pnpm run build:js",
+    "build:css": "tailwindcss -i src/global.css -o dist/global.css --minify",
+    "build:js": "tsup",
+    "dev": "concurrently \"pnpm run dev:css\" \"tsup --watch\" --names \"css,js\" --prefix-colors \"blue,green\"",
+    "dev:css": "tailwindcss -i src/global.css -o dist/global.css --watch"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "tailwind-variants": "^1.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.10",
+    "@tailwindcss/postcss": "^4.1.10",
+    "@types/node": "^20.11.20",
+    "@types/react": "^19.1",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
+    "postcss": "^8.5.5",
+    "tailwindcss": "^4.1.10",
+    "tsup": "^8.5.0",
+    "typescript": "^5"
+  }
+}

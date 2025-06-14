@@ -1,0 +1,39 @@
+# build output
+dist
+!.github/actions/*/dist
+.next
+target
+packages/next/wasm/@next
+tarballs/
+packages/**/*.tgz
+.errors/
+
+# dependencies
+node_modules
+package-lock.json
+test/node_modules
+.pnpm-store/
+
+# logs
+*.log
+
+# coverage
+.nyc_output
+coverage
+
+# test output
+test/**/out*
+test/**/next-env.d.ts
+.DS_Store
+/e2e-tests
+test/tmp/**
+test/.trace
+test/traces
+
+# Cache
+*.tsbuildinfo
+.swc/
+.turbo
+
+# Storybook
+*storybook.log
